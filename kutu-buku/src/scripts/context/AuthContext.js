@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // axios.defaults.baseURL = 'http://localhost:5000/api';
-axios.defaults.baseURL = 'https://kutu-buku-apps.vercel.app/api';
+axios.defaults.baseURL = '/api';
 // axios.defaults.baseURL = 'https://kutubuku-api.cyclic.cloud/api';
 
 let refresh = false;
