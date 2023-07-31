@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/kutu-buku-backend/(.*)",
-      "destination": "/kutu-buku-backend/api"
+      "source": "/api/(.*)",
+      "destination": "/api/index.js"
     }
   ]
 }
