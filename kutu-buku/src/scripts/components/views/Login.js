@@ -33,7 +33,6 @@ const Login = () => {
         {
           withCredentials: true,
           credentials: 'include',
-          crossDomain: true,
         }
       );
 
