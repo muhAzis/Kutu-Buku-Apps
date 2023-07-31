@@ -1,7 +1,4 @@
 {
-  "buildCommand": "cd kutu-buku && npm install && npm run build",
-  "outputDirectory": "kutu-buku/build",
-  "framework": "create-react-app",
   "rewrites": [
     {
       "source": "/kutu-buku-backend/(.*)",
