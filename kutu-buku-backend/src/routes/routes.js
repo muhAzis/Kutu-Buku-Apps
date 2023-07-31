@@ -5,7 +5,7 @@ import { homeResponse } from '../utils/response.js';
 
 const routes = express.Router();
 
-routes.get('/', (req, res) => homeResponse(200, res));
+routes.get('/api', (req, res) => homeResponse(200, res));
 
 routes.post('/api/register', Register);
 routes.post('/api/login', Login);
