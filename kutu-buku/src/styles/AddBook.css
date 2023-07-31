@@ -1,0 +1,133 @@
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.addbook-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.addbook-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 30px;
+  color: white;
+  background: linear-gradient(180deg, var(--clr-lightgreen) 0%, var(--clr-darkgreen) 100%);
+  justify-content: center;
+  align-items: center;
+}
+
+#addbookForm {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+#addbookForm h3 {
+  font-size: 1.4rem;
+}
+
+#addbookForm span {
+  color: var(--clr-bloodred);
+}
+
+#addbookForm input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+}
+
+#addbookForm .checkbox {
+  display: flex;
+  margin-bottom: 40px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+#addbookForm .checkbox input {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#addbookForm .addbook-genres {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+#addbookForm .addbook-genres .genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#addbookForm .addbook-genres .genres p.genre {
+  width: fit-content;
+  padding: 10px;
+  margin-bottom: 0;
+  color: white;
+  font-weight: 700;
+  line-height: 1;
+  border: 2px solid white;
+  border-radius: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+#addbookForm .addbook-genres .genres p:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#addbookForm .addbook-genres .genres p.genre.checked {
+  color: var(--clr-darkgreen);
+  background-color: white;
+}
+
+#addbookForm p {
+  width: 70%;
+  margin-bottom: 20px;
+  text-align: center;
+  white-space: normal;
+  align-self: center;
+}
+
+#saveBookBtn {
+  display: flex;
+  width: fit-content;
+  padding: 10px 30px;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--clr-darkgrey);
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: none;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#saveBookBtn:hover {
+  color: var(--clr-darkgreen);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#saveBookBtn .loading {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-bottom-color: var(--clr-darkgreen);
+  border-radius: 50%;
+  animation: loading 2s forwards infinite linear;
+}

@@ -1,0 +1,130 @@
+.statusbar-container {
+  display: flex;
+  width: 100%;
+  padding: 30px 60px;
+  gap: 20px;
+  color: var(--clr-darkgrey);
+  background-color: var(--clr-lightergrey);
+  border-radius: 20px;
+  border: 2px solid var(--clr-lightgrey);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.storage-capacity,
+.readed-books,
+.unreaded-books {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.storage-capacity,
+.readed-books,
+.unreaded-books {
+  display: flex;
+  padding: 20px 10px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.storage-capacity {
+  flex: 2.5;
+  padding: 20px 40px;
+  justify-content: flex-start;
+}
+
+.readed-books {
+  flex: 1;
+  position: relative;
+}
+
+.unreaded-books {
+  flex: 1;
+  position: relative;
+}
+
+.storage-percentage {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  gap: 10px;
+  text-align: center;
+  background: var(--radial-percentage);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.storage-percentage .percentage-container {
+  display: flex;
+  align-items: flex-end;
+  line-height: 0.5;
+}
+
+.storage-capacity .storage-percentage {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  background: var(--radial-percentage);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.storage-capacity .storage-percentage .percentage-container {
+  display: flex;
+  align-items: flex-end;
+  line-height: 0.5;
+}
+
+.storage-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+p.description {
+  font-weight: 300;
+}
+
+p.size {
+  font-weight: 700;
+}
+
+p.books-count {
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.storage-bar {
+  width: 250px;
+  height: 12px;
+  background-color: var(--clr-lightgrey);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.storage-bar .bar {
+  width: 75%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--clr-lightgreen) 0%, var(--clr-darkgreen) 100%);
+}
+
+.status-icon {
+  position: absolute;
+  inset: 0;
+  padding: 5px 10px;
+  font-size: 1.7rem;
+}
+
+.readed-books .status-icon,
+.readed-books p.books-count {
+  color: var(--clr-darkgreen);
+}
+
+.unreaded-books .status-icon,
+.unreaded-books p.books-count {
+  color: var(--clr-bloodred);
+}

@@ -1,0 +1,113 @@
+.book-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.book-main-data {
+  display: flex;
+  padding: 20px;
+  color: var(--clr-darkgrey);
+}
+
+.book-main-data .book-logo,
+.book-main-data .book-main-action {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-main-data .book-data-col2 {
+  flex: 3;
+}
+
+.book-main-data .book-data-col1 {
+  flex: 3;
+  overflow-x: hidden;
+}
+
+.book-main-data .book-logo i {
+  color: var(--clr-grey);
+  font-size: 3rem;
+}
+
+.book-main-data .book-data-col1 h2 {
+  font-size: 1.3rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.book-main-data .book-data-col1 h4 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.book-main-data .book-data-col1 p {
+  width: fit-content;
+  padding: 2px 10px;
+  border: 1px solid var(--clr-darkgrey);
+  border-radius: 8px;
+}
+
+.book-main-data .book-data-col1 p span {
+  font-weight: 700;
+}
+
+.book-main-data .book-data-col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-main-data .book-data-col2 p {
+  width: 150px;
+  margin-top: 10px;
+  color: var(--clr-grey);
+  font-size: 0.8rem;
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.book-main-data .book-main-action {
+  display: flex;
+  gap: 10px;
+  line-height: 0;
+  color: var(--clr-grey);
+  font-size: 2rem;
+}
+
+.book-main-data .book-main-action > i {
+  cursor: pointer;
+}
+
+.book-main-data .book-main-action .edit-btn {
+  color: var(--clr-grey);
+}
+
+.book-main-data .book-main-action .toggle-read-btn {
+  padding: 2px;
+  color: var(--clr-darkgreen);
+  border: 3px solid var(--clr-darkgreen);
+  border-radius: 10px;
+}
+
+.book-main-data .book-main-action .toggle-read-btn:hover {
+  color: white;
+  background-color: var(--clr-darkgreen);
+}
+
+.book-main-data .book-main-action .delete-btn {
+  padding: 2px;
+  color: white;
+  background-color: var(--clr-bloodred);
+  border: 3px solid var(--clr-bloodred);
+  border-radius: 10px;
+}
