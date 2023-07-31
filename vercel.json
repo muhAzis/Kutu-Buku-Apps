@@ -5,7 +5,7 @@
   "rewrites": [
     {
       "source": "/kutu-buku-backend/(.*)",
-      "destination": "/api/index.js"
+      "destination": "/kutu-buku-backend/api"
     }
   ]
 }
