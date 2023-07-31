@@ -8,7 +8,7 @@ import routes from './routes/routes.js';
 const app = express();
 const port = 5000;
 
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(cors({ credentials: true, origin: 'http://localhost:3000', methods: ['GET', 'POST', 'PUT', 'UPDATE', 'PATCH', 'DELETE'] }));
 // app.use(
 //   session({
 //     secret: 'super secret',
