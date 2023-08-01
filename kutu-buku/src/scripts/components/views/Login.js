@@ -36,15 +36,17 @@ const Login = () => {
         }
       );
 
-      axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.payload}`;
+      if (response.status === 201) {
+        axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.payload}`;
 
-      setHidden(true);
-      navigate('/');
-    } catch (error) {
-      setLoading(false);
-      setHidden(false);
-      setErrorMsg(error.message);
-    }
+        setHidden(true);
+        navigate('/');
+      } else {
+        setLoading(false);
+        setHidden(false);
+        setErrorMsg(response.message);
+      }
+    } catch (error) {}
   };
 
   const handleChange = (e) => {
